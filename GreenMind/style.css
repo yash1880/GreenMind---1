@@ -1,0 +1,560 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+p,
+h5 {
+  font-size: 18px;
+}
+
+/*  HEADER NAVBAR */
+.navbar-brand {
+  font-weight: 500;
+  color: #1e1e1e !important;
+}
+
+.navbar-nav .nav-link {
+  transition: color 0.2s ease;
+  position: relative;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #1e1e1e !important;
+}
+
+.hero-card-box {
+  background-color: #C1DFDC !important;
+  border-radius: 24px;
+  min-height: 500px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.structure-row {
+  min-height: 500px;
+}
+
+
+.left-content-pane {
+  padding: 60px 0 60px 60px;
+}
+
+
+.hero-title {
+  font-size: 64px;
+  line-height: 74px;
+  color: #1E1E1E;
+  letter-spacing: -1.5px;
+}
+
+.stat-num {
+  font-size: 32px;
+  font-weight: 600;
+  color: #1E1E1E;
+}
+
+.stat-text {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.search-box-frame {
+  max-width: 440px;
+}
+
+.arrow-img {
+  position: absolute;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.arrow-top-right {
+  top: 25px;
+  right: 45px;
+  width: 112px;
+  height: 154px;
+}
+
+.arrow-bottom-left {
+  top: 3px;
+  right: -185px;
+  width: 169.89px;
+  height: 112px;
+}
+
+
+.right-graphic-container {
+  min-height: 500px;
+}
+
+.right-graphic-pane {
+  position: absolute;
+  right: 55px;
+  bottom: 0;
+  width: 380px;
+  height: 440px;
+}
+
+.bg-arch-vector {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+.front-plant-image {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  z-index: 5;
+}
+
+/* Tablet / Mobile view configuration handlers */
+@media (max-width: 991px) {
+
+  .hero-card-box,
+  .structure-row {
+    min-height: auto;
+  }
+
+  .left-content-pane {
+    padding: 50px 30px;
+  }
+
+  .hero-title {
+    font-size: 44px;
+    line-height: 54px;
+  }
+}
+
+/* PRODUCTS (BEST SELLING) SECTION STYLES */
+.products-section {
+  background-color: #ffffff;
+}
+
+.best-selling-card h5 {
+  font-size: 32px;
+  line-height: 1.2;
+  color: #1e1e1e;
+}
+
+.see-more-btn {
+  background-color: #c9dedd;
+  border-color: transparent !important;
+  color: #1e1e1e !important;
+  transition: all 0.3s ease;
+}
+
+.see-more-btn:hover {
+  background-color: #a3cdcb;
+  transform: translateY(-2px);
+}
+
+.product-card {
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-img-wrapper {
+  width: 100%;
+  aspect-ratio: 1 / 1.25;
+  background-color: #f8f9fa;
+}
+
+/* ABOUT SECTION STYLES */
+.about-section {
+  background-color: #ffffff;
+}
+
+.head-title {
+  font-size: 32px;
+}
+
+.icon-circle {
+  width: 96px;
+  height: 96px;
+  background-color: #c9dedd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+
+.icon-circle i {
+  font-size: 2.5rem;
+  width: 40px;
+  height: 40px;
+  color: #1e1e1e;
+  display: inline-flex;
+}
+
+.text-muted {
+  color: #7a7a7a !important;
+  line-height: 1.6;
+}
+
+.small-text {
+  max-width: 290px;
+}
+
+
+/* CATEGORIES SECTION STYLES */
+.categories-section {
+  padding-top: 5rem !important;
+  padding-bottom: 7rem !important;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.bg-brand-teal {
+  height: 62%;
+  background-color: #c9dedd;
+  z-index: 0;
+}
+
+.z-1 {
+  z-index: 1;
+}
+
+.image-container {
+  width: 100%;
+  max-width: 352px;
+  aspect-ratio: 352 / 460;
+  overflow: hidden;
+  background-color: #f8f9fa;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.Customer-section {
+  width: 100%;
+  padding: 40px 0;
+}
+
+#infiniteTrack {
+  display: flex;
+  gap: 1.5rem;
+  overflow: hidden;
+  scroll-behavior: auto;
+  padding: 0 1rem 1rem;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+#infiniteTrack::-webkit-scrollbar {
+  display: none;
+}
+
+
+.testimonial-card {
+  min-width: 280px;
+  width: min(100%, 540px);
+  max-width: 540px;
+  min-height: 330px;
+  flex-shrink: 0;
+  background-color: #c9dedd;
+  transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (max-width: 767px) {
+  #infiniteTrack {
+    gap: 1rem;
+    padding: 0 0.75rem 1rem;
+  }
+
+  .testimonial-card {
+    width: min(100%, 90vw);
+    min-width: 260px;
+    padding: 1.5rem;
+  }
+}
+
+
+#infiniteTrack::-webkit-scrollbar {
+  display: none;
+}
+/*  FOOTER SECTION STYLES */
+.footer-section {
+  background-color: #c9dedd !important;
+  width: 100%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.footer-brand {
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+.footer-desc {
+  max-width: 250px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.footer-link-title {
+  font-size: 18px;
+  margin-bottom: 1rem;
+}
+
+.footer-link {
+  color: #7a7a7a !important;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.2s ease, padding-left 0.2s ease;
+  display: inline-block;
+}
+
+.footer-link:hover {
+  color: #1e1e1e !important;
+  padding-left: 4px;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 50%;
+  border: 1px solid #1e1e1e;
+  width: 44px;
+  height: 44px;
+  color: #1e1e1e;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: #1e1e1e;
+  color: #c9dedd;
+  transform: translateY(-3px);
+}
+
+/* Footer responsiveness */
+@media (max-width: 991px) {
+  .footer-section {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .footer-brand {
+    font-size: 22px;
+  }
+
+  .footer-desc {
+    max-width: 100%;
+  }
+
+  .footer-link-title {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 575px) {
+  .footer-section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .footer-desc {
+    font-size: 15px;
+  }
+
+  .footer-link {
+    font-size: 14px;
+  }
+
+  .footer-link-title {
+    margin-bottom: 0.8rem;
+    font-size: 16px;
+  }
+
+  .social-icon {
+    width: 42px;
+    height: 42px;
+    font-size: 1.05rem;
+  }
+
+  .footer-section .row.gy-5 {
+    gap: 1.75rem;
+  }
+
+  .footer-section .col-12,
+  .footer-section .col-sm-6,
+  .footer-section .col-md-2,
+  .footer-section .col-md-3,
+  .footer-section .col-md-4 {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+  }
+
+  .footer-section .text-center.text-sm-start,
+  .footer-section .d-flex.justify-content-center.justify-content-md-start {
+    text-align: center !important;
+    justify-content: center !important;
+  }
+
+  .footer-section .footer-brand,
+  .footer-section .footer-link-title {
+    text-align: center;
+  }
+
+  .footer-section .footer-desc {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer-section .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .footer-section .list-unstyled {
+    padding-left: 0;
+    margin: 0;
+  }
+}
+
+/* TABLET AND LAPTOP BREAKDOWN ENGINE  */
+@media (max-width: 991px) {
+
+  /* Navbar Tablet Adjustments */
+  .navbar-nav {
+    padding: 1rem 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
+  .navbar-nav .nav-link {
+    padding: 0.5rem 0 !important;
+  }
+
+  /* Hero Section Tablet Overlap Tweaks */
+  .left-content-pane {
+    padding: 40px 30px;
+  }
+
+  .right-graphic-pane {
+    height: 380px;
+    max-width: 320px;
+  }
+
+  /* Absolute Overlapping elements ko medium screen par clean look ke liye hide kiya */
+  .arrow-img {
+    display: none !important;
+  }
+
+  /* About Section Tweaks */
+  .head-title {
+    font-size: 28px;
+  }
+
+  .icon-circle {
+    width: 80px;
+    height: 80px;
+  }
+
+  .icon-circle i {
+    font-size: 1.65rem;
+  }
+
+  /* Categories Section Tweaks */
+  .bg-brand-teal {
+    height: 72%;
+  }
+
+  .image-container {
+    max-width: 300px;
+  }
+
+  /* Products Section Tweaks */
+  .best-selling-card h5 {
+    font-size: 26px;
+  }
+}
+
+/*  MOBILE VIEWS & EXTRA VIEWPPORT CONTROLS */
+@media (max-width: 767px) {
+
+  /* Hero Section Mobile Engine */
+  .left-content-pane {
+    padding: 35px 20px;
+  }
+
+  .right-graphic-pane {
+    height: 320px;
+    max-width: 270px;
+  }
+
+  /* Products Section Mobile Alignments */
+  .product-card {
+    max-width: 290px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .best-selling-card {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  /* Footer Mobile Structure */
+  .footer-desc {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  .small-text {
+    max-width: 100%;
+  }
+
+  .bg-brand-teal {
+    height: 88%;
+  }
+
+  .footer-link-title {
+    margin-bottom: 1rem !important;
+    font-size: 16px;
+  }
+}
+
+/* Desktop screen alignment (Middle card shift helper) */
+@media (min-width: 768px) {
+  .middle-card {
+    margin-top: 4.5rem;
+  }
+}
+
+/* Description Text styling refinement */
+.text-muted {
+  color: #7a7a7a !important;
+}
